@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("https://docs.google.com/uc?id=1N8avwvUXAGR5aPSUhVbAT5bir4tY9ztm");
+            background-size: cover;
+        }
+        canvas{
+            border: ridge brown 10px;
+        }
+    </style>
+</head>
+<body>
+   <canvas id="lienzo" width="700" height="500"></canvas>
+   <script>
+    canvas = document.getElementById("lienzo");
+    ctx = canvas.getContext("2d");
+    function cargarImagenes(){
+        fondo = new Image();
+        fondo.src = "https://docs.google.com/uc?id=1kmT5R5MaRBD9cXcrAc6UtSgCslJLnvZT";
+        fondo.onload = dibujarFondo;
+        
+        //https://docs.google.com/uc?id=11MkVDY9DGh6OPAMrn4kaCswwZx4WI87K
+        
+    }
+    function dibujarFondo(){
+        ctx.drawImage(fondo,0,0);
+    }
+   </script>
+</body>
+</html>
